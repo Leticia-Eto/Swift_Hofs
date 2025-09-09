@@ -23,3 +23,18 @@ var menusList = numList.filter {
     num in
     return (num) < 0
 }
+
+var sumList = numList.reduce(0) {
+    partialResult, currentNum in
+    return partialResult + currentNum
+}
+
+var sumListShort = numList.reduce(0) { $0 + $1}
+
+// partial - inicial - 0
+// return : proximo partial
+
+
+
+
+
